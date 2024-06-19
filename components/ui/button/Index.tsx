@@ -38,7 +38,7 @@ const variants = cva(
         size: {
             sm: ['w-[103px]', 'h-[36px]', 'leading-6'],
             md: ['w-[107px]', 'h-[40px]', 'leading-6'],
-            lg: [],
+            lg: ['w-[125px]', 'h-[48px]', 'leading-6'],
             xl: ['w-[146px]', 'h-[60px]', 'leading-6'],
         },
         icon: {
