@@ -10,7 +10,8 @@ const variants = cva(
     [   
         'rounded-md', 
         'tracking-wide',
-        'cursor-pointer', 'inline-flex',
+        'cursor-pointer', 
+        'inline-flex',
         'items-center', 'justify-center',
         'relative',
         'transition',
