@@ -46,7 +46,7 @@ const variants = cva(
                 'w-[107px]', 'h-[40px]', 'text-sm', 'leading-4'
             ],
             large: [
-                'w-[125px]', 'h-[48px]', 'text-base', 'leading-6'],
+                'w-[125px]', 'h-[48px]', 'text-base', 'leading-5'],
             xl: ['w-[146px]', 'h-[60px]', 'text-lg', 'leading-6'],
         },
         icon: {
