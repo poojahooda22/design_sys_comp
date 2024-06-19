@@ -3,6 +3,7 @@
 import { VariantProps, cva } from "class-variance-authority"
 import clsx from "clsx"
 import { forwardRef } from "react"
+import { twMerge } from "tailwind-merge"
 
 
 const variants = cva(
@@ -35,10 +36,10 @@ const variants = cva(
             link:[],
         },
         size: {
-            sm: [],
+            sm: ['w-[103px]', 'h-[36px]', 'leading-6'],
             md: [],
             lg: [],
-            xl: ['w-[146px] h-[60px] leading-6'],
+            xl: ['w-[146px]', 'h-[60px]', 'leading-6'],
         },
         icon: {
             false: [],
@@ -70,13 +71,13 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
         loading?: boolean
     }
 
- const Button = forwardRef<HTMLButtonElement, Props>(function ButtonComponent
-    ({ className, children, loading, ...rest},
+ const Button = forwardRef<HTMLButtonElement, ButtonProps>(function ButtonComponent
+    ({ className, intent , size, children, loading, ...rest},
          ref) {
         return (
             <button
                 ref={ref} 
-                className={clsx('')}
+                className={twMerge(variants({intent, size, className}))}
                 {...rest}
             >
                 {loading && <Loading /> }
