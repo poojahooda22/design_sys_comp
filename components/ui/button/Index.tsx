@@ -5,16 +5,36 @@ import clsx from "clsx"
 import { forwardRef } from "react"
 
 
-const variants = cva([
-
-], {
+const variants = cva([], {
     variants: {
-        variant: {
+        intent: {
             primary: [],
             secondary: [],
             destructive: [],
             link:[],
         },
+        size: {
+            sm: [],
+            md: [],
+            lg: [],
+            xl: [],
+        },
+        icon: {
+            false: [],
+            left: [],
+            right: [],
+            only: [],
+        },
+        state: {
+            active: [],
+            disabled: [],
+            focus: [],
+            hover: [],
+        }
+    },
+    defaultVariants: {
+        intent: 'primary',
+        size: 'xl',
     },
 })
 
@@ -30,7 +50,8 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement>
     ({ className, children, loading, ...rest},
          ref) {
         return (
-            <button 
+            <button
+                ref={ref} 
                 className={clsx(
                 'bg-indigo-500 text-white',
                 'w-[146px] h-[60px] leading-6',
