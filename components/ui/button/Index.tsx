@@ -40,7 +40,7 @@ const variants = cva(
         },
         size: {
             small: [
-                'w-[103px]', 'h-[36px]', 'text-sm', 'leading-6'
+                'w-[103px]', 'h-[36px]', 'text-sm', 'leading-4'
             ],
             medium: [
                 'w-[107px]', 'h-[40px]', 'text-sm', 'leading-6'
