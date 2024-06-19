@@ -8,7 +8,8 @@ import { twMerge } from "tailwind-merge"
 
 const variants = cva(
     [   
-        'rounded-md', 'tracking-wide',
+        'rounded-md', 
+        'tracking-wide',
         'cursor-pointer', 'inline-flex',
         'items-center', 'justify-center',
         'relative',
