@@ -43,7 +43,7 @@ const variants = cva(
                 'w-[103px]', 'h-[36px]', 'text-sm', 'leading-4'
             ],
             medium: [
-                'w-[107px]', 'h-[40px]', 'text-sm', 'leading-6'
+                'w-[107px]', 'h-[40px]', 'text-sm', 'leading-4'
             ],
             large: [
                 'w-[125px]', 'h-[48px]', 'text-base', 'leading-6'],
