@@ -18,7 +18,18 @@ const variants = cva(
     ], {
     variants: {
         intent: {
-            primary: ['bg-indigo-500 text-white, font-semibold'],
+            primary: [
+                'bg-indigo-500',
+                'text-white',
+                'font-semibold',
+                'shadow',
+                'hover:bg-indigo-700',
+                'hover:shadow-md',
+                'ring-offset-2',
+                'focus-visible:ring-2',
+                'disabled:bg-indigo-300',
+                'disabled:shadow'
+            ],
             secondary: [],
             destructive: [],
             link:[],
@@ -54,7 +65,10 @@ const Loading = () => (
     </div>
 )
 
-type Props = React.ButtonHTMLAttributes<HTMLButtonElement>
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & 
+    VariantProps<typeof variants> & {
+        loading?: boolean
+    }
 
  const Button = forwardRef<HTMLButtonElement, Props>(function ButtonComponent
     ({ className, children, loading, ...rest},
@@ -62,28 +76,7 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement>
         return (
             <button
                 ref={ref} 
-                className={clsx(
-                'bg-indigo-500 text-white',
-                'w-[146px] h-[60px] leading-6',
-                'rounded-md',
-                'font-semibold tracking-wide',
-                'cursor-pointer',
-                'inline-flex items-center justify-center',
-                'relative shadow-md',
-                
-                //Hover
-                'transition',
-                'hover:bg-indigo-800 hover:shadow-lg',
-    
-                //Focus
-                'outline-none',
-                'ring-indigo-500/70 ring-offset-2 ',
-                'focus-visible:ring-2 focus:scale-[0.98]',
-    
-                //Disabled
-                'disabled:bg-indigo-300 disabled:cursor-not-allowed',
-                className)}
-                
+                className={clsx('')}
                 {...rest}
             >
                 {loading && <Loading /> }
