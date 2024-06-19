@@ -5,10 +5,20 @@ import clsx from "clsx"
 import { forwardRef } from "react"
 
 
-const variants = cva([], {
+const variants = cva(
+    [   
+        'rounded-md', 'tracking-wide',
+        'cursor-pointer', 'inline-flex',
+        'items-center', 'justify-center',
+        'relative',
+        'transition',
+        'outline-none',
+        'focus:scale-[0.98]',
+        'disabled:cursor-not-allowed',
+    ], {
     variants: {
         intent: {
-            primary: [],
+            primary: ['bg-indigo-500 text-white, font-semibold'],
             secondary: [],
             destructive: [],
             link:[],
@@ -17,7 +27,7 @@ const variants = cva([], {
             sm: [],
             md: [],
             lg: [],
-            xl: [],
+            xl: ['w-[146px] h-[60px] leading-6'],
         },
         icon: {
             false: [],
