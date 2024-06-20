@@ -27,16 +27,47 @@ const variants = cva(
                 'text-white',
                 'font-semibold',
                 'shadow',
-                'hover:bg-indigo-700',
-                'hover:shadow-md',
                 'ring-offset-2',
                 'focus-visible:ring-2',
+                'hover:bg-indigo-600',
                 'disabled:bg-indigo-300',
-                'disabled:shadow'
             ],
-            secondary: [],
-            destructive: [],
-            link:[],
+            secondary: [
+                'font-semibold',
+                'bg-gray-50',
+                'hover:bg-gray-400',
+                'disabled:bg-gray-50',
+                'text-gray-950',
+                'shadow',
+                'border',
+                'border-neutral-200/50',
+                'ring-offset-2',
+                'focus-visible:ring-2',
+                'ring-gray-200',
+            ],
+            destructive: [
+                'font-semibold',
+                'bg-red-500',
+                'hover:bg-red-600',
+                'text-white',
+                'shadow',
+                'hover:shadow-md',
+                'disabled:bg-red-500/50',
+                'disabled:shadow',
+                'ring-offset-2',
+                'focus-visible:ring-2',
+                'ring-red-500',
+            ],
+            link:[
+                'font-light',
+                'text-indigo-500',
+                'hover:text-indigo-600',
+                'disabled:text-indigo-500/50',
+                'disabled:no-underline',
+                'hover:underline',
+                'ring-indigo-300',
+                'focus-visible:ring-1',
+            ],
         },
         size: {
             small: [
@@ -62,7 +93,7 @@ const variants = cva(
             active: [],
             disabled: [],
             focus: [],
-            hover: [],
+            hover: ['bg-indigo-700', 'shadow-md'],
         }
     },
     defaultVariants: {
@@ -111,3 +142,4 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
  Button.displayName = 'Button'
 
  export { Button }
+ export type { ButtonProps }
