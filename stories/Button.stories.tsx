@@ -8,7 +8,7 @@ export default {
   component: Button,
   argTypes: {
     intent: {
-      options: ['primary', 'secondary', 'danger', 'war', ''],
+      options: ['primary', 'secondary', 'danger', 'wr', ''],
       control: { type: 'radio' }
     },
     size: {
