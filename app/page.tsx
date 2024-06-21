@@ -14,7 +14,7 @@ export default function Home() {
   }
 
   function decrement() {
-    setCount(prevCount  )
+    setCount(prevCount )
   }
   return (
     <main className="mx-auto container mt-20 text-white ">
