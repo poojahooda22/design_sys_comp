@@ -10,11 +10,11 @@ export default function Home() {
   const [count, setCount] = useState()
 
   function increment() {
-    setCount(  prevCount + 1 )
+    setCount( prevCount + 1 )
   }
 
   function decrement() {
-    setCount(  prevCount - 1)
+    setCount( prevCount - 1)
   }
   return (
     <main className="mx-auto container mt-20 text-white ">
