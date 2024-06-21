@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Home() {
   const [loading, setLoading] = useState(false);
 
-  const [count, setCount] = useState(1)
+  const [count, setCount] = useState()
 
   function increment() {
     setCount(prevCount => prevCount + 1 )
