@@ -10,7 +10,7 @@ export default function Home() {
   const [count, setCount] = useState()
 
   function increment() {
-    setCount(prevCount +)
+    setCount(prevCount )
   }
 
   function decrement() {
