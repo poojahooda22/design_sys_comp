@@ -6,9 +6,19 @@ import { useState } from "react";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
+
+  const [count, setCount] = useState(1)
+
+  function increment() {
+    setCount(prevCount => prevCount + 1 )
+  }
+
+  function decrement() {
+    setCount(prevCount => prevCount - 1)
+  }
   return (
-    <main className="mx-auto container mt-20 ">
-      <div className="grid grid-cols-4 items-center justify-center gap-[4vw]">
+    <main className="mx-auto container mt-20 text-white ">
+      {/* <div className="grid grid-cols-4 items-center justify-center gap-[4vw]">
         <Button className="justify-self-center" size="small">
           Primary
         </Button>
@@ -79,8 +89,14 @@ export default function Home() {
         >
           Destructive
         </Button>
-      </div>
-
+      </div> */}
+        <button 
+        onClick={decrement}
+        className="text-[1.5vw] mr-4 bg-blue-500 px-[2vw] rounded-lg">-</button>
+        <span className="text-[2vw] ">{count}</span>
+        <button 
+        onClick={increment}
+        className="text-[1.5vw] ml-4 bg-blue-500 px-[2vw] py-[0vw] rounded-lg">+</button>
     </main>
   );
 }
