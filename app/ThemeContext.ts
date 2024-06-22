@@ -13,7 +13,7 @@ export function ThemeProvider({children} : any)  {
     }
 
     return (
-        <Themnt value={dah}>
+        <Themnt value={}>
             
                
     )
