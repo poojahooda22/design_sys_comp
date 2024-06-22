@@ -12,8 +12,7 @@ export function ThemeProvider({children} : any)  {
         setDarkTheme(prevDarkTheme => !prevDarkTheme)
     }
 
-    return (
-              
+    return (       
     )
 }
 
