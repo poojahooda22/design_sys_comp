@@ -13,11 +13,11 @@ export function ThemeProvider({children} : any)  {
     }
 
     return (
-        <ThemeContex value={darkTheme}>
+        <ThemeCont value={darkTheme}>
             <ThemeUpdateContext.Provider value={toggleTheme}>
                 {children}
             </ThemeUpdateContext.Provider> 
-        </ThemeContex
+        </ThemeCont
 
     )
 }
