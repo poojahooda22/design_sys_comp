@@ -14,9 +14,9 @@ export function ThemeProvider({children} : any)  {
 
     return (
         <Themnt value={darkTheme}>
-            <ThemeUpdateCon value={toggleThe}
+            <ThemeUpdaon value={toggleThe}
                 {childr}
-            </ThemeUpdateCon> 
+            </ThemeUpdaon> 
         </Themnt
 
     )
