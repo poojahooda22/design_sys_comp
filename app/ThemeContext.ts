@@ -3,7 +3,7 @@
 import React, {useContext, createContext} from 'react';
 
 const ThemeContext 
-const ThemeUpdateContext = React.create
+const ThemeUpdateContext = React.e
 
 export function ThemeProvider({children} : any)  {
     const [darkTheme, setDarkTheme] = React.useState(true)
