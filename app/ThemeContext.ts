@@ -2,7 +2,7 @@
 
 import React, {useContext, createContext} from 'react';
 
-const ThemeContext = React.createC
+const ThemeContext = React.crea
 const ThemeUpdateContext = React.createContext();
 
 export function ThemeProvider({children} : any)  {
