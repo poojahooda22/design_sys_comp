@@ -27,3 +27,11 @@ export const Green: Story = {
         variant: 'green'
     },
 }
+
+export const Grouped: Story = {
+    render: (args) => <div>
+        <Light variant="red" />  
+        <Light variant="yellow" />
+        <Light variant="green" />
+    </div>
+}
