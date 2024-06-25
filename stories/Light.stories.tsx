@@ -29,7 +29,7 @@ export const Green: Story = {
 }
 
 export const Grouped: Story = {
-    render: (args) => <div>
+    render: (args) => <div style={{width: 'max-content', padding: '12px', borderRadius: '8px', display: 'flex', flexDirection: 'column', gap: 10, border: '1px solid black'}}>
         <Light variant="red" />  
         <Light variant="yellow" />
         <Light variant="green" />
