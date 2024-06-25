@@ -1,4 +1,4 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Story, Meta } from '@storybook/react';
 
 import { Button } from '@/components/ui/button/Index';
 
@@ -22,14 +22,21 @@ export default {
       control: { type: 'text' }
     }
   }
-} as ComponentMeta<typeof Button>;
+} as Meta<typeof Button>;
 
 
 
-const Template: ComponentStory<typeof Button> = (args: any) => <Button {...args} />;
+const Template: Story<typeof Button> = (args: any) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
   intent: 'primary',
   children: 'Primary Button',
+};
+
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  intent: 'secondary',
+  children: 'Click me',
 };
