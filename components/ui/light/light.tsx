@@ -1,13 +1,15 @@
 import React from "react";
 
-type Props = {}
+type Props = {
+    variant: "red" | "green" | "yellow"
+}
 
-const Light = ( props: Props) => {
+const Light = ( {variant = 'red'}: Props) => {
     return (
         <div style={{
             width: 70,
             height: 70,
-            backgroundColor: "green",
+            backgroundColor: variant,
             borderRadius: "50%",
         }}>   
         </div>
