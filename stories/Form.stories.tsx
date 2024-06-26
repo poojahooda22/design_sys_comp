@@ -7,5 +7,5 @@ const meta: Meta<typeof FormDemo> = {
     title: 'Form'
 };
 
-
+export default meta;
 
