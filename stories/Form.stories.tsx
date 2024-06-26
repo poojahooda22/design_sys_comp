@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import FormDemo from "@/components/ui/form";
+import FormDemo from "@/components/ui/form/Form"
 
 const meta: Meta<typeof FormDemo> = {
     component: FormDemo,
