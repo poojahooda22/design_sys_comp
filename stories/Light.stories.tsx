@@ -5,6 +5,13 @@ import Light from "@/components/ui/light/light"
  const meta: Meta<typeof Light> = {
     component: Light,
     title: "Light",
+    tags: ['autodocs'],
+    argTypes: {
+        variant: {
+            control: {type: 'select'},
+            options: ['red', 'yellow', 'green']
+        }
+    }
 }
 
 export default meta;
