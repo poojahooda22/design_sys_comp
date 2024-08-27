@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bo
+This is a [Next.js](https://nextjs.org/) project b
 ## Getting Started
 
 First, run the development server:
