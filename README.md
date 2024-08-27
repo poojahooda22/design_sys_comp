@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project boot
+This is a [Next.js](https://nextjs.org/) project boo
 
 ## Getting Started
 
