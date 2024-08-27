@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](htt).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](ht).
 
 ## Getting Started
 
