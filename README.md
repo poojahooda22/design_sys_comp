@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) pr
+This is a [Next.js](https://nextjs.org/) p
 ## Getting Starte
 
 First, run the development server:
