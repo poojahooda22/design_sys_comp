@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`cre`]().
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`cr`]().
 
 ## Getting Started
 
