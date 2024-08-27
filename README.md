@@ -1,5 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project
-## Getting Started
+## Getting Starte
 
 First, run the development server:
 
