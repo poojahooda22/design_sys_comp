@@ -1,4 +1,4 @@
-This is a [Next.js](https://nex/) 
+This is a [Next.js](https://ne/) 
 ## Getting Starte
 
 First, run the development server:
