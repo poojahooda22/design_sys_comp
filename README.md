@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) projec
+This is a [Next.js](https://nextjs.org/) proje
 ## Getting Starte
 
 First, run the development server:
